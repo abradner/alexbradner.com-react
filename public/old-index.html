@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Bradner - A Primer</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="ab-extra.css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+
+  <script src="ab-extra.js"></script>
+
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <a name="top" id="top"></a>
+<!--Nav-->
+  <section>
+    <nav class="nav nav-underlay">
+
+      <div class="nav-left">
+        <a class="nav-item" href="https://github.com/abradner" target="_blank">
+          <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+          <span class="is-hidden-mobile">GitHub</span>
+        </a>
+        <a class="nav-item" href="https://twitter.com/abradner" target="_blank">
+          <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+          <span class="is-hidden-mobile">Twitter</span>
+
+        </a>
+        <a class="nav-item" href="https://www.linkedin.com/in/alexbradner/" target="_blank">
+          <span class="icon">
+        <i class="fa fa-linkedin-square"></i>
+      </span>
+          <span class="is-hidden-mobile">LinkedIn</span>
+
+        </a>
+        <a class="nav-item" href="http://www.ramblin.gs" target="_blank">
+          <span class="icon">
+        <i class="fa fa-wordpress"></i>
+      </span>
+          <span class="is-hidden-mobile"> Blog</span>
+
+        </a>
+      </div>
+
+      <div class="nav-center">
+        <a href="#top" class="nav-item" alt="Back to Top">
+          <span class="is-hidden-mobile">Back to Top</span>
+          <span class="is-hidden-tablet icon">
+                <i class="fa fa-arrow-circle-up"></i>
+      </span>
+        </a>
+      </div>
+
+      <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+      <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+      <span class="nav-toggle" id="nav-toggle-overlay">
+    <span></span>
+      <span></span>
+      <span></span>
+      </span>
+
+      <!-- This "nav-menu" is hidden on mobile -->
+      <!-- Add the modifier "is-active" to display it on mobile -->
+      <div class="nav-right nav-menu" id="nav-menu-overlay">
+        <a href="#about" class="nav-item">
+      About Me
+    </a>
+        <a href="#projects" class="nav-item">
+      Projects
+    </a>
+        <a href="#cv" class="nav-item">
+      CV
+    </a>
+
+      </div>
+    </nav>
+    </div>
+  </section>
+
+<!--Splash-->
+  <section class="hero is-info is-fullheight z-high">
+    <!-- Hero header: will stick at the top -->
+
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Alex Bradner
+        </h1>
+        <h2 class="subtitle">Enterpreneur. Full Stack Dev. Skill Collector.</h2>
+        <h2>
+          (A Primer)
+        </h2>
+      </div>
+    </div>
+    <div class="hero-body is-hidden-tablet">
+
+      <div class="container has-text-centered is-fullheight">
+        <a href="#about"><span class="icon is-large">
+        <i class="fa fa-arrow-circle-down"></i>
+      </span></a>
+
+      </div>
+
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot"> 
+
+      <div id="arrow-desktop" class="hide">
+        <div class="columns is-hidden-mobile has-text-right">
+          <div class="column is-1-tablet is-offset-10-tablet is-1-widescreen is-offset-11-widescreeen"> <span class="icon is-large">
+        <i class="fa fa-arrow-circle-down"></i>
+      </span>
+          </div>
+        </div>
+      </div>
+      <a name="about" id="about"></a>
+
+      <nav class="nav">
+        <div class="nav-left">
+          <a class="nav-item" href="https://github.com/abradner" target="_blank">
+            <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+            <span class="is-hidden-mobile">GitHub</span>
+          </a>
+          <a class="nav-item" href="https://twitter.com/abradner" target="_blank">
+            <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+            <span class="is-hidden-mobile">Twitter</span>
+
+          </a>
+          <a class="nav-item" href="https://www.linkedin.com/in/alexbradner/" target="_blank">
+            <span class="icon">
+        <i class="fa fa-linkedin-square"></i>
+      </span>
+            <span class="is-hidden-mobile">LinkedIn</span>
+
+          </a>
+          <a class="nav-item" href="http://www.ramblin.gs" target="_blank">
+            <span class="icon">
+        <i class="fa fa-wordpress"></i>
+      </span>
+            <span class="is-hidden-mobile"> Blog</span>
+
+          </a>
+        </div>
+
+        <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+        <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+        <span class="nav-toggle" id="nav-toggle-underlay">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        </span>
+
+        <!-- This "nav-menu" is hidden on mobile -->
+        <!-- Add the modifier "is-active" to display it on mobile -->
+        <div class="nav-right nav-menu" id="nav-menu-underlay">
+          <a href="#about" class="nav-item">
+            About Me
+          </a>
+          <a href="#projects" class="nav-item">
+            Projects
+          </a>
+          <a href="#cv" class="nav-item">
+            CV
+         </a>
+
+        </div>
+      </nav>
+    </div>
+  </section>
+
+<!--About-->
+  <section class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          <span class="icon is-medium">
+            <i class="fa fa-user-circle"></i>
+          </span> About Me
+        </h1>
+        <h2 class="subtitle">
+          How I think and what I like
+        </h2>
+        <h2 class="subtitle">
+          𝞫 This section is in beta.
+        </h2>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        {/*<h2 class="heading">
+          Values
+        </h2>
+        <p>Be Nice.</p>*/}
+
+        <h2 class="heading">
+          Philosophies
+        </h2>
+        <div class="columns">
+          <div class="column">
+            <h3>Software</h3>
+            <p>Code is read more than its written. Write code that the reader can understand, even if that's future you. </p>
+            <p>Write as little code as possible to solve the task </p>
+            <p>Understanding why you're doing something is far more important than what</p>
+          </div>
+          <div class="column">
+            <h3>Business</h3>
+            <p>Figure out what the problem is before you start building solutions.</p>
+            <p>Look after your juniors. Their insights aren't constrained by the boundaries we've learnt.</p>
+            <p>Validate and/or test before you build. Validate and test once you've built. Analyse and understand the differences.
+              I call this Hypothesis-driven development. A logical extension of the scientific method, which goes a little like this:
+              <small>
+              <ol>
+                <li>Analyse the problem space</li>
+                <li>build a hypothesis</li>
+                <li>describe a metric that tests it in isolation</li>
+                <li>attempt to validate or disprove it before building anything non-trivial</li>
+                <li>refine the hypothesis and metrics with any discoveries if it seems valid</li>
+                <li>build the minimum viable product required to fully test this hypothesis</li>
+                <li>gather real user data to finally validate the hypothesis</li>
+                <li>explore anything additional that has been discovered in the processs.</li>
+              </ol>
+              The Lean Startup by Eric Reis had some great insight into this, but like all resources it doesn't capture everything</small></p>
+          </div>
+          <div class="column">
+            <h3>Life</h3>
+            <p>Don't use black boxes: Learn how things work, even if you're never going to become an expert. </p>
+            <p>Move fast and break things.</p>
+            <p>Be nice.</p>
+          </div>
+        </div>
+
+        <h2 class="heading">
+          Outside of work
+        </h2>
+        <p>I love to tinker, to build and to disassemble.</p>
+        <p>I climb things</p>
+        <p>All my vehicles have two wheels</p>
+        <p>I prefer to game with friends: with cards, boards, dice and online</p>
+        <p>My kindle is never far</p>
+        <p>I hate filling out these things and would prefer to just introduce myself</p>
+      </div>
+    </div>
+  </section>
+
+<!--Projects-->
+  <a name="projects" id="projects"></a>
+  <section class="hero is-medium is-success is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          <span class="icon is-medium">
+            <i class="fa fa-microchip"></i>
+          </span> Projects
+        </h1>
+        <h2 class="subtitle">
+          Things I've done
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="content">
+
+        <section class="section" id="project-foogi">
+          <div class="columns is-mobile">
+            <div class="column is-narrow">
+              <img src="images/foogi-web-icon.png" class="image is-32x32 is-hidden-tablet" />
+              <img src="images/foogi-web-icon.png" class="image is-64x64 is-hidden-mobile" />
+            </div>
+            <div class="column">
+              <div class="columns">
+                <div class="column">
+                  <h2 class="heading">Foogi</h2>
+                  <h4 class="subheading">Smart Outbound Scheduling for Sales</h4>
+                </div>
+                <div class="column">
+                  <h6>Technologies:</h6>
+                  <p>Ruby on Rails, EmberJS, CSS, Bootstrap, Postgres, AWS, Firebase, OAuth2, RESTful APIs</p>
+                  <h6>Skills:</h6>
+                  <p>Lean MVP design, customer interaction, UX, Marketing, SEO, growth strategies, raising capital, teamwork,
+                    remote teamwork, leadership, self-motivation, flexibility, cost/benefit analysis, small business financials,
+                    company directorship, Kanban development</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p>Scheduling is complicated.</p>
+          <p>The focus of my life for the last 3 years.</p>
+          <h3>The Problem</h3>
+          <p>No one wants to share their calendar with strangers on the internet, or worse, someone who wants to sell you something.</p>
+          <p>Tony Ockleshaw head of Sales at Tigerspike has said that "Getting the first meeting feels as good as making a sale",
+            but how do you get that first meeting?</p>
+          <p>Without transparency into your lead's calendar (which you're not going to get) there's a lot of friction and pain
+            as you play phone or email tag to try to negotiate a timeslot.</p>
+          <p>So how do you build trust?</p>
+          <h3>The Solution</h3>
+          <p>Foogi.</p>
+          <p>
+            A secure, private platform that lets you visually and intelligently compare your calendars without sharing any private data.
+            Foogi lets you transparently book meetings with clients without sharing any calendar events, just live availability
+          </p>
+          <p>Integrated into your email and calendar across Google Apps, Office 365 and soon iCloud.</p>
+
+          <p>But this is just the first step.</p>
+          <p>
+            Currently under development is the technology to securely build insights into our users' calendar data without ever exposing
+            that calendar data to Foogi or anyone else.
+          </p>
+          <p>In other words, we are building an intelligent, private suggestion engine that never exposes <em>any</em> personal
+            data to either party or Foogi.</p>
+          <p>When it comes to scheduling tools, people often say <em>"Fast, Simple or Secure: Pick two"</em>. We believe you
+            can have all three.</p>
+          <p>
+            <a href="http://www.foogi.me/" target="_blank">
+              visit           
+              <span class="icon is-small">
+                <i class="fa fa-external-link-square"></i>
+              </span>
+            </a>
+          </p>
+        </section>
+
+         <section class="section" id="project-foogi">
+          <div class="columns is-mobile">
+            <div class="column is-narrow">
+              <img src="images/cucp-screenshot.png" class="image is-32x32 is-hidden-tablet" />
+              <img src="images/cucp-screenshot.png" class="image is-64x64 is-hidden-mobile" />
+            </div>
+            <div class="column">
+              <div class="columns">
+                <div class="column">
+                  <h2 class="heading">The Command Post</h2>
+                  <h4 class="subheading">Handling the administrative tasks of a 600-member Cadet Unit base of operations in the field.</h4>
+                </div>
+                <div class="column">
+                  <h6>Challenges:</h6>
+                  <p>Offline, Must be platform agnostic, must be built from the ground up in a week, data integrity is critical, must be maintainable by students with little to no time nor experiece, must teach maintianing students valuable skills</p>
+                  <h6>Technologies:</h6>
+                  <p>Electron, NodeJS, ES6, EmberJS, Pouch/CouchDB, CSS, Bootstrap</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3>Scenario:</h3>
+          <p>Saturday, March 25th: A message arrives from a student at my old high school - home of the largest cadet unit in the southern hemisphere.</p>
+          <blockquote><p>Can you make some changes to that software you wrote for us in 2005? Before camp next weekend?</p></blockquote>
+          <p>Damn. that was in VB .Net 2.0, before I even used source control, and I've had data loss at least once since then.</p>
+          <p>Hmm.</p>
+          <p>Can I rebuild it in my spare time within a week? Let's give it a go!</p>
+          <h3>Requirements</h3>
+          <p>The app currently runs on an old-ish laptop with no reliable internet access (remote camp locations) and unreliable power (generators go down every 8 hours for refuel)</p>
+          <p>The current hardware is end-of-life and the rebuild shouldn't tie the school into any infrastructure decisions, rather, it needs to be as platform agnostic as possible &mdash; if the cadet unit decides to use ruggardised tablets instead of a windows laptop, or maybe a home-built station using a raspberry pi, the solution should be adaptive not restrictive.</p>
+          <p>I don't want to be the single point of failure maintaining this tool. Also, this is the perfect opportunity for budding engineers to learn modern software development tools and techniques, so the app needs to be built well using future-employable languages and tools</p>
+          <h3>The result</h3>
+          <p>The app was built and is a massive improvement on its predecessor (unsurprisingly). BUT this is actually a catalyst for the creation of a platoon of students who will be responsible for building and maintaining advanced technological tools used by the unit.</p>
+          <p>Stay tuned!</p>
+          <p>
+            <a href="https://github.com/abradner/cucp-ember-electron" target="_blank">
+              github           
+              <span class="icon is-small">
+                <i class="fa fa-external-link-square"></i>
+              </span>
+            </a>
+          </p>
+        </section>
+
+
+        <section class="section" id="project-swb">
+          <div class="columns is-mobile">
+            <div class="column is-narrow">
+              <img src="images/swb-ct-logo.png" class="image is-32x32 is-hidden-tablet" />
+              <img src="images/swb-ct-logo.png" class="image is-64x64 is-hidden-mobile" />
+            </div>
+            <div class="column">
+              <div class="columns">
+                <div class="column">
+                  <h2 class="heading">Startup Weekend Brisbane 2017</h2>
+                  <h4 class="subheading">Project: Underscored - Supporting Emerging Bands Online</h4>
+                  <h6 class="subheading">A Creative Tech startup built in 54 Hours</h6>
+                </div>
+                <div class="column">
+                  <h6>Skills:</h6>
+                  <p>Lean MVP design, collaboration, customer interaction, UX, Marketing, teamwork, leadership, self-motivation,
+                    flexibility, communication, presentation, adapting to sudden change.
+                  </p>
+                  <h6>Challenges Overcome:</h6>
+                  <p>Unifying a team of strong egos, customer development in a unfamiliar space, rapid pivots and iteration.
+                    flexibility
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            A startup with a validated business model and customers after a weekend of work is <strong>deeply</strong> satisfying.
+          </p>
+          <p>
+            Taking everything I've learnt in the past three years and applying it in a super-concentrated, raw weekend of power was mindblowing.
+            I'll write up a decent analysis of the weekend when I get a moment to myself.
+          </p>
+          <p>But for now, have a look at our
+            <a href="https://www.facebook.com/qutcea/videos/1487379564619596/" target="_blank">
+              first pitch 
+              <span class="icon is-small">
+                <i class="fa fa-external-link-square"></i>
+              </span>
+              </a> (technical troubles and mistakes included) and the accompanying
+            <a href="https://docs.google.com/presentation/d/1lAdOfGaBxJpNMBe-N68qHUuCqey2v364Wb7go0PW71Y/edit?usp=sharing" target="_blank">
+                slide deck 
+                <span class="icon is-small">
+                  <i class="fa fa-external-link-square"></i>
+                </span>
+              </a>
+          </p>
+        </section>
+
+        <section class="section" id="project-holistic-auth">
+          <div class="columns is-mobile">
+            <div class="column is-narrow">
+              <img src="images/osi_symbol.png" class="image is-32x32 is-hidden-tablet" />
+              <img src="images/osi_symbol.png" class="image is-64x64 is-hidden-mobile" />
+            </div>
+            <div class="column">
+              <div class="columns">
+                <div class="column">
+                  <h2 class="heading">Holistic Auth</h2>
+                  <h4 class="subheading">Simplified, multi-provider OAuth2 authentication <em>and</em> API consumption for Rails and Single Page
+                    Apps
+                  </h4>
+                  <h6 class="subheading">(just rolls off the tongue, doesn't it?)</h6>
+                </div>
+                <div class="column">
+                  <h6>Technologies:</h6>
+                  <p>OAuth2, SSL, Ruby, Rails, Google APIs, Microsoft Office 365 / Graph APIs, REST, CI</p>
+                  <h6>Skills:</h6>
+                  <p>API Design, Security Design, integration testing, behaviour-driven development, mitigating code smells,
+                    microservice design, self-motivation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p>Simplifying OAuth2 authentication <em>and</em> API consumption</p>
+          <p>OAuth2 login for your SPA React or Ember front-end app? Easy. Just copy and paste a snippet.</p>
+          <p>How about a traditional server-rendered Rails app? Still easy. Copy and paste a snippet, maybe map some column
+            names.
+          </p>
+          <p>Integrating a single flow that authenticates with your backend and authorises your front-end session in a transparent
+            manner to your user? That's hard.</p>
+          <p>What if you want to consume that identity provider's API to manage their calendar, contacts etc as well? Now it's
+            really tricky.</p>
+          <p>Holistic Auth handles all the boilerplate of dealing with providers like Google and Microsoft, exposing a clean
+            API to developers and can be easily extended to support new providers (eg LinkedIn or Facebook).</p>
+          <p>You're welcome.</p>
+          <p>
+            <a href="https://github.com/abradner/holistic_auth" target="_blank">
+              github           
+              <span class="icon is-small">
+                <i class="fa fa-external-link-square"></i>
+              </span>
+            </a>
+          </p>
+
+        </section>
+
+        <section class="section" id="project-homely">
+          <div class="columns is-mobile">
+            <div class="column is-narrow">
+              <img src="images/oshw-logo-400-px.png" class="image is-32x32 is-hidden-tablet" />
+              <img src="images/oshw-logo-400-px.png" class="image is-64x64 is-hidden-mobile" />
+            </div>
+            <div class="column">
+              <div class="columns">
+                <div class="column">
+                  <h2 class="heading">Homely</h2>
+                  <h4 class="subheading">Device-agnostic Home Automation</h4>
+                </div>
+                <div class="column">
+                  <h6>Technologies:</h6>
+                  <p>Digital &amp; Analog circuits, Embedded Systems, C, Java, Android, Arduino, Ruby, Rails, Websockets, CI</p>
+                  <h6>Skills:</h6>
+                  <p>Collaboration &amp; teamwork, UX, flexibility, presentation, agile development, hardware hacking, prototyping
+                    &amp; soldering</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p>Have you bought a smart thingy from somewhere that insists on using its own app? Maybe it comes with a weird and
+            complicated remote that's entirely unnecessary.</p>
+          <p>Homely will have it talking with everything else you own and you can control it all from your phone.</p>
+          <p>
+            I started work on this in 2012, before the announcement of HomeKit, before Google Weave and before the conception of NinjaBlocks'
+            Ninja Sphere. This is <em>still</em> an ongoing problem that Google, Apple and everyone else have
+            failed to tackle.
+          </p>
+          <p>
+            Apart from Homely, the first actual viable commercial solution I've found is XiaoMi's MiHome, and that's still full of issues.
+          </p>
+          <p>I feel I owe the world an apollogy for abandoning this project but you gotta eat some times.</p>
+          <p>
+            <a href="https://github.com/abradner/homely" target="_blank">
+              github           
+              <span class="icon is-small">
+                <i class="fa fa-external-link-square"></i>
+              </span>
+            </a>
+          </p>
+
+        </section>
+      </div>
+    </div>
+  </section>
+
+<!--CV-->
+  <a name="cv" id="cv"></a>
+  <section class="hero is-medium is-warning is-bold">
+
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          <span class="icon is-medium">
+            <i class="fa fa-pied-piper"></i>
+          </span> CV
+        </h1>
+        <h2 class="subtitle">
+          Hire me!
+        </h2>
+        <h2 class="subtitle">
+          𝞫 This section is in beta.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        <p>This section is <strong>very raw</strong>. I'm slowly filling it out as I have time. In the meantime, read my
+          <a href="https://www.linkedin.com/in/alexbradner/" target="_blank">
+        LinkedIn
+          <span class="icon is-small">
+            <i class="fa fa-external-link-square"></i>
+          </span>
+        </a> and the <a href="#projects">Projects</a> section for a broad overview of my skillset.
+        </p>
+
+        <section class="section">
+          <h2 class="heading">
+            <span class="icon is-medium">
+            <i class="fa fa-lightbulb-o"></i>
+          </span> Skills
+          </h2>
+          <div class="columns">
+            <div class="column">
+              <h4 class="subheading">Languages &amp; Frameworks</h4>
+              <pre>Top-level
+  Ruby [9]*
+    Rails [9]
+  JS / ES2017   [9]
+    EmberJS [9]
+    React [8]
+    Node [8]
+  Haskell [7]
+  Python [6]
+
+*(What do the numbers mean? See below)
+
+Markup
+  CSS/Sass [7]
+  HTML [8]
+
+Currently Learning and investigating
+  Elixir / Phoenix [3]
+  Swift [2]
+  Apex [3]
+  Cloujre [1]
+  JS 
+    Serverless / AWS Lambda [2]
+    Redux [3]
+    ReactNative [3]
+    ReactApollo [4]
+
+Garbage Collecting [Known but not recently used]
+  C / C++ [6]
+  Java [7]
+  C# [6]</pre>
+
+            </div>
+            <div class="column">
+              <h4 class="subheading">Software Development</h4>
+              <pre>Tools
+  AWS
+  Git
+
+Soft Skills
+  User Experience
+  API Development
+  Big Data
+  Bash / Shell
+  Care about code quality
+  Spike, dogfood, refactor process
+              </pre>
+              <p>&nbsp;</p>
+              <h4>Startups &amp; Business</h4>
+              <pre>
+Leadership
+Raising Capital
+Growth Hacking
+Impact Analysis  
+Lean methodology</pre> 
+              <p>&nbsp;</p>
+              <h4>Misc</h4>
+              <pre>
+Any / Every OS. UI Optional
+
+Adobe CC
+  Premiere
+  Photoshop
+  InDesin
+  After Effects
+  Light Room</pre>
+
+
+            </div>
+          </div>
+              <pre>
+What do the numbers mean?
+  1  I've written some code that executes
+  2  I've played with it but never completed a non-trivial project
+  3  I've completed simple projects but nothing too taxing
+  4  I've done something a little complicated with guidance
+  5  I've done something a little complicated without guidance
+  6  I can solve most problems with guidance
+  7  I have a basic mastery
+  8  I can solve most things without stack overflow open
+  9  I have mastery of the skill. I understand the ecosystem and all its subtleties. Only esoteric things might require documentation
+  10 Total mastery. This is unattainable.
+</pre>
+
+        </section>
+        <section class="section">
+          <h2 class="heading">
+            <span class="icon is-medium">
+            <i class="fa fa-lightbulb-o"></i>
+          </span> Education &amp; Training
+          </h2>
+          <div class="columns">
+            <div class="column">
+              <h4 class="subheading">Qualifications</h4>
+              <pre>
+BSc (Computer Science) - University of New South Wales (Australia)
+Language Certificate HSK 4 - Central China Normal University
+Section incomplete, More coming</pre>
+        </div>
+        </div>
+        </section>
+        <section class="section">
+          <h2 class="heading">
+            <span class="icon is-medium">
+            <i class="fa fa-lightbulb-o"></i>
+          </span>Personal
+          </h2>
+          <div class="columns">
+            <div class="column">
+              <h4 class="subheading">Hobbies</h4>
+              <pre>Internet of Things &amp; Hardware Hacking
+Rock Climbing &amp; Bouldering
+3D Modelling &amp; Printing
+Cycling
+Videography
+Urban Garden Hacking</pre>
+        </div>
+            <div class="column">
+              <h4 class="subheading">Languages</h4>
+              <pre>
+English
+中文 - 普通话 (Mandarin Chinese)
+Español (Spanish)              </pre>
+        </div>
+        </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+
+<!--Footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p class="ab-logo">
+          ab
+        </p>
+        <p>
+          Website and content by Alex Bradner <span class="icon"><i class="fa fa-copyright"></i></span> 2017 All rights reserved
+        </p>
+        <p>
+          Built using open source technologies
+          <a class="icon" href="http://bulma.io">
+            <img src="http://bulma.io/favicons/safari-pinned-tab.svg" class="fa"></i>
+          </a>
+          <a class="icon" href="fontawesome.io">
+            <i class="fa fa-font-awesome"></i>
+          </a>
+        </p>
+        <p>
+          Updated 2017-04-11
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
